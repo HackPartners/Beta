@@ -47,10 +47,10 @@
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    Menu <i class="fa fa-bars"></i>
+                    <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-play-circle"></i> <span class="light">Start</span> Bootstrap
+                    <img src="img/hp-square-logo.png" class="img-responsive">
                 </a>
             </div>
 
@@ -62,13 +62,25 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#">Our Story</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#download">Download</a>
+                        <a class="page-scroll" href="#">The Team</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#">Services</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#">Media</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#">Case Study</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#">#Railtech Fund</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -77,23 +89,26 @@
         <!-- /.container -->
     </nav>
 
+    <!--Particle Floating Header
+    <div class="animation-wrapper wow fadeInUpBig" data-wow-duration="3s">
+        <div class="particle particle-1"></div>
+        <div class="particle particle-2"></div>
+        <div class="particle particle-3"></div>
+        <div class="particle particle-4"></div>
+    </div>   
+    --> 
+    
+
     <!-- Intro Header -->
-    <header class="intro wow toColor" data-wow-duration="3s">
-        
+    <header class="intro wow toColor" data-wow-duration="2s">
         <div class="intro-body">
-            <div class="animation-wrapper wow fadeInUpBig" data-wow-duration="3s">
-            <div class="particle particle-1"></div>
-            <div class="particle particle-2"></div>
-            <div class="particle particle-3"></div>
-            <div class="particle particle-4"></div>
-        </div>
             <div class="container">
-                <img src="img/hp-logo-rectangle.png" class="img-responsive col-lg-12">
+                <img src="img/hp-logo-rectangle.png" class="img-responsive col-lg-12" alt="Responsive image">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Our Vision</h1>
-                        <p class="intro-text">"DRIVE FORWARD INNOVATION IN THE
-                            <br>FUTURE'S MOST CRITICAL INDUSTRIES"</p>
+                        <h1 class="brand-heading">Our Vision<hr></h1>
+                        <p class="intro-text">DRIVE FORWARD INNOVATION IN THE
+                        <br>FUTURE'S MOST CRITICAL INDUSTRIES</p>
                         <a href="#about" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
@@ -104,13 +119,54 @@
     </header>
 
     <!-- About Section -->
-    <section id="about" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Grayscale</h2>
-                <p>Grayscale is a free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
-                <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
-                <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.</p>
+    <section id="mission" class="mission-body">
+        <div class="container text-center">
+            <div class="row">
+                <h2>MISSIONS</h2>
+                <br>
+                <div class="wow fadeInLeft">
+                    <div class="col-sm-4">
+                        <img src="img/mission-1.png" class="img-responsive">
+                    </div>
+                    <div class="col-sm-8">
+                        <h3>Fundamentally Improve Customer<br>
+                        experience and operational efficiency<br>
+                        in the industries that we operate in</h3>
+                    </div>
+                </div>
+                <br>
+                <div class="wow fadeInRight">
+                    <div class="col-sm-4">
+                        <img src="img/mission-2.png" class="img-responsive">
+                    </div>
+                    <div class="col-sm-8">
+                        <h3>Lead & support the delivery<br>
+                        of the uk's most important technology<br>
+                        infrastructure projects</h3>
+                    </div>
+                </div>
+                <br>
+                <div class="wow fadeInLeft">
+                    <div class="col-sm-4">
+                        <img src="img/mission-3.png" class="img-responsive">
+                    </div>
+                    <div class="col-sm-8">
+                        <h3>Become industry leaders through<br>
+                        thought leadership and implementation<br>
+                        of innovation</h3>
+                    </div>
+                </div>
+                <br>
+                <div class="wow fadeInRight">
+                    <div class="col-sm-4">
+                        <img src="img/mission-4.png" class="img-responsive">
+                    </div>
+                    <div class="col-sm-8">
+                        <h3>Be the platform that enables innovation<br>
+                        through the break down of barriers and<br>
+                        accelerates the adoption of new technology</h3>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -151,6 +207,8 @@
         </div>
     </section>
 
+
+
     <!-- Map Section -->
     <div id="map"></div>
 
@@ -178,6 +236,9 @@
 
     <!-- Animated JS -->
     <script src="js/wow.min.js"></script>
+
+    <!-- Change Hamburger on Click -->
+    <script src="js/hamburger.js"></script>
 
 </body>
 

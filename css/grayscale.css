@@ -50,7 +50,7 @@ p {
   }
 }
 a {
-  color: #42DCA3;
+  color: #38ffd3;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -196,6 +196,10 @@ a:focus {
     font-size: 20px;
   }
 }
+.intro .intro-body .btn{
+  font-size:35px;
+}
+
 .btn-circle {
   width: 60px;
   height: 60px;
@@ -354,7 +358,7 @@ a:focus {
 .mission-body {
   width: 100%;
   height: auto;
-  padding: 100px 0;
+  padding: 100px 0 150px 0;
   text-align: center;
   color: white;
   background: #222222 no-repeat bottom center scroll;
@@ -371,23 +375,161 @@ a:focus {
 
 .mission-body img{
   max-width:50%;
-  float:right;
   padding:20px 0 20px 0;
+  float:right;
+}
+
+@media only screen and (max-width: 767px) {
+  .mission-body img{
+    float:none;
+    display:block;
+    display:inline-block;
+  }
 }
 
 .mission-body h3{
   line-height: 35px;
   float:left;
   padding:20px 0 20px 0;
+  max-width:600px;
 }
 
-td{
-  height:50px;
-  vertical-align:center;
+.mission-body span{
+  color:#36ffd1;
+}
+
+.box {
+  background:#121212;
+  position: absolute;
+  width: 60%;
+  left: 20%;
+  right: 20%;
+  margin-top:80px;
+  padding-bottom:30px;
+  -webkit-box-shadow: 0px 0px 26px 3px rgba(0,0,0,0.47);
+  -moz-box-shadow: 0px 0px 26px 3px rgba(0,0,0,0.47);
+  box-shadow: 0px 0px 26px 3px rgba(0,0,0,0.47);
+}
+
+@media only screen and (max-width: 767px) {
+  .box{
+    width:100%;
+    left: 0;
+    right: 0;
+  }
+}
+
+.box h2{
+  color:#FFFFFF;
+  font-size:21px;
+  letter-spacing: 3px;
+}
+
+.box hr{
+  width:25px;
+  background:#FFFFFF;
+  height:3px;
+  font-size: 0;
+  border:0;
 }
 .content-section {
   padding-bottom: 50px;
 }
+
+.service-section {
+  width:100%;
+  height:auto;
+  color: white;
+  padding: 350px 0 350px 0;
+}
+
+.service-section span{
+  color:#36ffd1;
+}
+
+.service-section hr{
+  width:40px;
+  background:#37ffcf;
+  height:5px;
+  font-size: 0;
+  border:0;
+}
+
+.service-section p{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size:16px;
+}
+
+.service-image-1{
+  background: url(../img/service-1.png) no-repeat center center scroll;
+  position:relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-blend-mode: screen;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
+  z-index:-1;
+}
+
+.service-image-2{
+  background: url(../img/service-2.png) no-repeat center center scroll;
+  position:relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-blend-mode: screen;
+  margin-top:-100px;
+  z-index:-2;
+}
+
+.service-image-3{
+  background: 
+    linear-gradient(#1d1d1b 60%,black) no-repeat center center scroll;
+  position:relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-blend-mode: screen;
+  margin-top:-350px;
+  z-index:-3;
+}
+
+.service-image-3 .triangle-left{
+  float:left;
+  width:50%;
+}
+
+.service-image-3 .triangle-right{
+  float:right;
+  width:50%;
+}
+
+.service-image-3 .inner{
+  position:absolute;
+  padding-top:300px;
+}
+
+.service-image-4{
+  background: 
+    url(../img/fund-bg.png) no-repeat center center scroll;
+  position:relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-blend-mode: screen; 
+  border-style:dashed;
+  border-width:3px 0 0 0;
+  border-color:#1f1f1e;
+  margin-top:-200px;
+}
+
+
 .download-section {
   width: 100%;
   padding: 50px 0;
@@ -418,24 +560,25 @@ td{
 }
 .btn {
   text-transform: uppercase;
-  font-family: "Langdon", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:13px;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   border-radius: 0;
+  letter-spacing: 2px;
 }
 .btn-default {
-  border: 1px solid #42DCA3;
-  color: #42DCA3;
+  border: 1px solid #38ffd3;
+  color: #38ffd3;
   background-color: transparent;
 }
 .btn-default:hover,
 .btn-default:focus {
-  border: 1px solid #42DCA3;
+  border: 1px solid #38ffd3;
   outline: none;
   color: black;
-  background-color: #42DCA3;
+  background-color: #38ffd3;
 }
 ul.banner-social-buttons {
   margin-top: 0;

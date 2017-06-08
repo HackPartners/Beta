@@ -1151,7 +1151,7 @@ hr {
 }
 .sr-only {
   position: absolute;
-  width: 1px;
+  width: 15px;
   height: 1px;
   padding: 0;
   margin: -1px;
